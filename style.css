@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    background-color: #3B4D72;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:visited {
+    color: black;
+}
+
+a:link {
+    color: black;
+}
+
+#header {
+    padding: 1em;
+    margin: 2em;
+    background-color: #7395DD;
+    border-radius: 0.5em;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+#projects {
+    background-color: #7395DD;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 0.5em;
+}
+
+#projects h2 {
+    margin-top:0;
+}
+
+.project {
+    border: 0.1em black;
+    border-style: solid;
+    padding: 1em;
+    margin-top: 1em;
+    background-color: #84ABFF;
+    border-radius: 0.5em;
+}
+
+.project .project-title h3 {
+    margin-top: 0;
+}
+
+.project .project-content p {
+    margin-bottom: 0;
+}
