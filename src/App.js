@@ -1,57 +1,50 @@
-import './App.css';
+import "./App.css";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+
+import Nav from "./components/Nav";
+import HomePage from "./components/Homepage";
+import About from "./components/About";
+import Contact from "./components/Contact";
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      light: "#757ce8",
+      main: "#fff",
+      dark: "#002884",
+      contrastText: "#fff",
+    },
+    secondary: {
+      light: "#ff7961",
+      main: "#f44336",
+      dark: "#ba000d",
+      contrastText: "#000",
+    },
+  },
+});
 
 function App() {
-
-  function Button({ text }) {
-    return (
-      <div className="button">
-        <button>{text}</button>
-      </div>);
-  }
-
-  function HomePage() {
-    return (
-      <div className="homepage-container">
-        <h1>Justin Newman</h1>
-        <p>This is a test landing page that will be updated soon...</p>
-      </div>);
-  }
-
   return (
     <div className="container">
       <Router>
-        <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <ThemeProvider theme={theme}>
+          <Nav />
 
-        <Switch>
-          <Route path="/about">
-            <h1>About Justin</h1>
-            <p>He is looking for a new GF who actually helps him</p>
-          </Route>
-          <Route path="/">
-            <HomePage />
-            <Button text="test"></Button>
-          </Route>
-        </Switch>
-
-
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/">
+              <HomePage />
+            </Route>
+          </Switch>
+        </ThemeProvider>
       </Router>
     </div>
   );

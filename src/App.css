@@ -1,14 +1,90 @@
 html {
-    background-image: url("./assets/background-medium.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #464646;
-    background-size: cover;
+  background-image: url("./assets/background-medium.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #464646;
+  background-size: cover;
 
-    color: rgb(218, 201, 181);
+  color: rgb(218, 201, 181);
+}
+
+.light-text {
+  color: rgb(218, 201, 181);
 }
 
 .homepage-container {
-    text-align: center;
+  padding-left: 1em;
+  text-align: center;
+}
+
+.homepage-link {
+  color: rgb(218, 201, 181);
+  text-decoration: none;
+  margin: 1em;
+  font-size: large;
+}
+
+.homepage-link:hover {
+  color: white;
+}
+
+.homepage-spacer {
+  height: 5em;
+}
+
+.float-right {
+  display: inline-flex;
+  float: right;
+}
+
+.spacer {
+  clear: both;
+}
+
+.drawer {
+  background-color: rgb(30, 40, 50);
+}
+
+a.sidenav-link {
+  display: inline-block;
+  color: rgb(218, 201, 181);
+  text-decoration: none;
+  padding: 1em 1em 1em 1em;
+  width: 100%;
+}
+
+.sidenav-link:hover {
+  background-color: rgb(100, 100, 100);
+}
+
+.sidenav-link:visited {
+  color: rgb(218, 201, 181);
+}
+
+.about-container {
+  margin: 0 2em 0 2em;
+}
+
+.about-card {
+  background-color: rgb(220, 220, 210, 0.75);
+  color: black;
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  border-radius: 0.5em;
+  margin: auto;
+  margin-bottom: 2em;
+  max-width: 600px;
+}
+
+.about-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.indent {
+  padding-left: 1em;
 }
