@@ -2,12 +2,10 @@ export default function Contact() {
   return (
     <div className="about-container">
       <div className="about-card center-text">
-        <h1>
-          <a href="mailto: jgnewman1997@gmail.com">Email Me!</a>
-        </h1>
-        <h5>
+        <h3>Contact Me</h3>
+        <h3>
           <a href="mailto: jgnewman1997@gmail.com">jgnewman1997@gmail.com</a>
-        </h5>
+        </h3>
       </div>
     </div>
   );

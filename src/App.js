@@ -8,6 +8,7 @@ import Nav from "./components/Nav";
 import HomePage from "./components/Homepage";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Projects from "./components/Projects";
 
 const theme = createMuiTheme({
   palette: {
@@ -39,6 +40,9 @@ function App() {
             </Route>
             <Route path="/contact">
               <Contact />
+            </Route>
+            <Route path="/projects">
+              <Projects />
             </Route>
             <Route path="/">
               <HomePage />
