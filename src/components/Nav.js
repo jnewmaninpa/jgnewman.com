@@ -38,6 +38,7 @@ export default function Nav() {
           {[
             { text: "Home", link: "/" },
             { text: "About", link: "/about" },
+            { text: "Projects", link: "/projects" },
             { text: "Contact", link: "/contact" },
           ].map((item, index) => (
             <ListItem button key={item.text}>
