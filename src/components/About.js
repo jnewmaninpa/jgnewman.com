@@ -14,7 +14,11 @@ export default function About() {
       <div className="about-card">
         <h2>Certifications</h2>
         <h3>
-          <a href="https://www.credly.com/badges/eb699659-b54b-4bfc-8ef4-1540fa84b0c8/linked_in_profile">
+          <a
+            href="https://www.credly.com/badges/eb699659-b54b-4bfc-8ef4-1540fa84b0c8/linked_in_profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Oracle Certified Associate, Java SE 8 Programmer
           </a>
         </h3>

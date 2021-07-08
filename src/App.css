@@ -88,3 +88,17 @@ a.sidenav-link {
 .indent {
   padding-left: 1em;
 }
+
+.project-card {
+  background-color: rgb(220, 220, 210, 0.75);
+  color: black;
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  border-radius: 0.5em;
+  margin: auto;
+  margin-bottom: 2em;
+  max-width: 600px;
+}
+
+.project-card a {
+  color: black;
+}
