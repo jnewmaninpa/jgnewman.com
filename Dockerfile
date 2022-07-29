@@ -1,11 +1,9 @@
-FROM node:lts-alpine as build-deps
-WORKDIR /src
-COPY package.json yarn.lock ./
-RUN yarn
+FROM node:16-alpine as build
+WORKDIR /usr/local/app
 COPY . ./
-RUN yarn build
+RUN npm install
+RUN npm run build
 
-FROM nginx:stable
-COPY --from=build-deps /src/build /usr/share/nginx/html
+FROM nginx:stable-alpine
+COPY --from=build /usr/local/app/dist/jgnewman.com /usr/share/nginx/html
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
