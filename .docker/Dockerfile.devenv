@@ -5,3 +5,6 @@ RUN useradd -s /bin/bash -m vscode \
  && usermod -aG docker vscode
 
 USER vscode
+
+RUN npm install
+RUN npm install -g @angular/cli@14
