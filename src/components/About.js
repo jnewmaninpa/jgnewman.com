@@ -6,9 +6,13 @@ export default function About() {
       </div>
       <div className="about-card">
         <h2>Work Experience</h2>
+        <h3>Ford Credit</h3>
+        <h4>
+          <i>Software Engineer:</i> September 2023 - Present
+        </h4>
         <h3>Ford Credit via TEKsystems</h3>
         <h4>
-          <i>Software Engineer:</i> August 2021 - Present
+          <i>Software Engineer:</i> August 2021 - September 2023
         </h4>
         <h3>CGI Inc.</h3>
         <h4>
